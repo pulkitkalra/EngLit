@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>EngLit</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--JavaScript-->
+    <script src="js/site.js"></script>
+    <!-- JQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Bootstrap v3.3.7 -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+    <script src="js/bootstrap.js"></script>
+    <!-- Custom styles sheet -->
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <!--Google fonts-->
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Muli">
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="favicon/favicon.ico" />
+</head>
+
+<body>
+    <div class="row">
+        <div class="container-fluid">
+            <!-- Static navbar -->
+            <nav class="navbar navbar-default">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false"
+                            aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                </button>
+                        <a class="navbar-brand" href="index.html" id="brandID"> <img alt="Brand" src="images/NewLogo_resized.jpg"></a>
+                    </div>
+                    <div id="navbar" class="navbar-collapse collapse">
+                        <ul class="nav navbar-nav">
+                            <li class="active"><a href="index.html">Dashboard</a></li>
+                            <li><a href="assignment.html">Assignments</a></li>
+                            <li><a href="feedback.html">Review</a></li>
+
+                        </ul>
+                        <ul class="nav navbar-nav navbar-right">
+                            <!-- dropdown-notifications box -->
+                            <li id="navRight" class="dropdown">
+                                <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                                <span class="glyphicon glyphicon-bell"></span>
+                                <span class="caret"></span>
+                                <ul class="dropdown-menu dropdown-messages">
+                                    <li>
+                                        <a href="#">
+                                            <div>
+                                                <strong>Assignment 4: Romeo and Juliet</strong>
+                                                <span class="pull-right text-muted">
+                                            <em>3 hours ago</em>
+                                        </span>
+                                            </div>
+                                            <div>New Assignment released. Create new soliloq ...</div>
+                                        </a>
+                            </li>
+                            <li class="divider"></li>
+                            <li>
+                                <a href="#">
+                                    <div>
+                                        <strong>Peer Feedback (Assignment 3)</strong>
+                                        <span class="pull-right text-muted">
+                                            <em>Yesterday</em>
+                                        </span>
+                                    </div>
+                                    <div>Peer Feedback (Assignment 3) is now available.</div>
+                                </a>
+                            </li>
+                            <li class="divider"></li>
+                            <li>
+                                <a href="#">
+                                    <div>
+                                        <strong>New Feedback on Assignment 2</strong>
+                                        <span class="pull-right text-muted">
+                                            <em>2 days ago</em>
+                                        </span>
+                                    </div>
+                                    <div>Sarah and 2 others placed feedback on your ...</div>
+                                </a>
+                            </li>
+                            <li class="divider"></li>
+                            <li>
+                                <a class="text-center" href="#">
+                                    <strong>See All Notifications</strong>
+                                    <i class="fa fa-angle-right"></i>
+                                </a>
+                            </li>
+                        </ul>
+                        <!-- /.dropdown-messages -->
+                        </li>
+                        <!-- Setting dropdown -->
+                        <li id="navRight" class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                                    <span class="glyphicon glyphicon-cog"></span>
+                                    <span class="caret"></span>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">Account</a></li>
+                        <li><a href="#">Email</a></li>
+                        <li><a href="#">Notifications</a></li>
+                        <!--
+                                    <li role="separator" class="divider"></li>
+                                    <li><a href="#">Separated link</a></li>
+                                    <li><a href="#">One more separated link</a></li> -->
+                        </ul>
+                        </li>
+                        <li><a>
+                            <span class="glyphicon glyphicon-user" aria-hidden="true"></span> Hello, Bob</a></li>
+                        <!-- End label. End navbar -->
+
+                        </ul>
+                    </div>
+                    <!--/.nav-collapse -->
+                </div>
+                <!--/.container-fluid -->
+            </nav>
+        </div>
+        <!-- Dashboard content begins here -->
+        <div class="container-fluid">
+            <div class="body-content">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-lg-9">
+                            <div class="panel panel-default" id="panelCA">
+                                <div class="panel-heading">
+                                    <h3 class="panel-title"><strong> Current Assignments</strong></h3>
+                                </div>
+                                <div class="panel-body">
+                                    <div id="as_list" class="list-group">
+                                        <a href="assignment.html" class="list-group-item">
+                                            <strong><span class="pull-right"><em>Due: 15/06/2017</em></span></strong>
+                                            <h4 class="list-group-item-heading">Assignment 4: Romeo and Juliet</h4>
+                                            <p class="list-group-item-text">Created: 19/05/2017, 14:29 by James Warren</p>
+                                            <br>
+                                            <p><strong>Instructions: </strong> Read the extract baed on Act 3 Scene 2 and answer the 
+                                            questions that follow.</p>
+                                            <div class="progress">
+                                                <div class="progress-bar progress-bar-warning progress-bar-striped massive-font" role="progressbar" aria-valuenow="40" aria-valuemin="0"
+                                                    aria-valuemax="100" style="width:20%" >
+                                                    20% Complete
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a href="javascript:;" class="list-group-item">
+                                            <strong><span class="pull-right"><em>Due: 10/06/2017</em></span></strong>
+                                            <h4 class="list-group-item-heading">Assignment 3: Macbeth</h4>
+                                            <p class="list-group-item-text">Created: 14/04/2017, 11:14 by James Warren</p>
+                                            <br>
+                                            <p><strong>Instructions: </strong> Discuss the intentions of Lady Macbeth in Act 3 Scnene 2.</p>
+                                            <div class="progress">
+                                                <div class="progress-bar progress-bar-info progress-bar-striped massive-font" role="progressbar" aria-valuenow="40" aria-valuemin="0"
+                                                    aria-valuemax="100" style="width:60%">
+                                                    60% Complete
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a href="javascript:;" class="list-group-item">
+                                            <strong><span class="pull-right"><em>Due: 31/05/2017</em></span></strong>
+                                            <h4 class="list-group-item-heading">Assignment 2: Death of a Salesman</h4>
+                                            <p class="list-group-item-text">Created: 02/04/2017, 22:47 by James Warren</p>
+                                            <br>
+                                            <p><strong>Instructions: </strong> With reference to the provided text, elaborate on the metaphor for the salesman. Ensure
+                                            that you link your response to the cetnral theme of the "American Dream". For this assignment, you must also make sure to 
+                                            completet the evaluations well.</p>
+                                            <div class="progress">
+                                                <div class="progress-bar progress-bar-success progress-bar-striped massive-font" role="progressbar" aria-valuenow="40" aria-valuemin="0"
+                                                    aria-valuemax="100" style="width:90%" >
+                                                    90% Complete
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3">
+                            <!-- Calender adopted from  -->
+                            <div class="panel panel-default" id="panelCal">
+                                <div class="panel-heading">
+                                    <h3 class="panel-title"><span class="glyphicon glyphicon-calendar"></span><strong> Calender</strong></h3>
+                                </div>
+                                <div class="panel-body">
+                                    <div class="col-lg-12" style="padding:0px;">
+                                        <table class="table table-bordered table-style table-responsive">
+                                            <tr>
+                                                <th colspan="2"><a href="javascript:;"><span class="glyphicon glyphicon-chevron-left"></span></a></th>
+                                                <th colspan="3"> May 2017</th>
+                                                <th colspan="2"><a href="javascript:;"><span class="glyphicon glyphicon-chevron-right"></span></a></th>
+                                            </tr>
+                                            <tr>
+                                                <th>S</th>
+                                                <th>M</th>
+                                                <th>T</th>
+                                                <th>W</th>
+                                                <th>T</th>
+                                                <th>F</th>
+                                                <th>S</th>
+                                            </tr>
+                                            <tr>
+                                                <td></td>
+                                                <td>1</td>
+                                                <td>2</td>
+                                                <td>3</td>
+                                                <td>4</td>
+                                                <td>5</td>
+                                                <td>6</td>
+                                            </tr>
+                                            <tr>
+                                                <td>7</td>
+                                                <td>8</td>
+                                                <td>9</td>
+                                                <td>10</td>
+                                                <td>11</td>
+                                                <td>12</td>
+                                                <td>13</td>
+                                            </tr>
+                                            <tr>
+                                                <td>14</td>
+                                                <td>15</td>
+                                                <td>16</td>
+                                                <td>17</td>
+                                                <td>18</td>
+                                                <td>19</td>
+                                                <td>20</td>
+                                            </tr>
+                                            <tr>
+                                                <td>21</td>
+                                                <td>22</td>
+                                                <td>23</td>
+                                                <td>24</td>
+                                                <td>25</td>
+                                                <td>26</td>
+                                                <td>27</td>
+                                            </tr>
+                                            <tr>
+                                                <td>28</td>
+                                                <td>29</td>
+                                                <td class="today">30</td>
+                                                <td>31</td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3">
+                            <div class="panel panel-default" id="panelCal">
+                                <div class="panel-heading">
+                                    <h3 class="panel-title"><span class="glyphicon glyphicon glyphicon-user"></span><strong> Group Members</strong></h3>
+                                </div>
+                                <div class="panel-body">
+                                    <ul class="list-group">
+                                        <li class="list-group-item"><span class="glyphicon glyphicon-user"></span> Sarah</li>
+                                        <li class="list-group-item"><span class="glyphicon glyphicon-user"></span> Jim</li>
+                                        <li class="list-group-item"><span class="glyphicon glyphicon-user"></span> Jenny</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /container -->
+</body>
+
+</html>

@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>EngLit</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--JavaScript-->
+    <script src="js/site.js"></script>
+    <!-- JQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Bootstrap v3.3.7 -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+    <script src="js/bootstrap.js"></script>
+    <!-- Custom styles sheet -->
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <!--Google fonts-->
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Muli">
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="favicon/favicon.ico" />
+</head>
+
+<body>
+    <div class="row">
+        <div class="container-fluid">
+            <!-- Static navbar -->
+            <nav class="navbar navbar-default">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false"
+                            aria-controls="navbar">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="index.html" id="brandID"> <img alt="Brand" src="images/NewLogo_resized.jpg"></a>
+                    </div>
+                    <div id="navbar" class="navbar-collapse collapse">
+                        <ul class="nav navbar-nav">
+                            <li><a href="index.html">Dashboard</a></li>
+                            <li><a href="assignment.html">Assignments</a></li>
+                            <li class="active"><a href="feedback.html">Review</a></li>
+
+                        </ul>
+                        <ul class="nav navbar-nav navbar-right">
+                            <!-- dropdown-notifications box -->
+                            <li id="navRight" class="dropdown">
+                                <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                                <span class="glyphicon glyphicon-bell"></span>
+                                <span class="caret"></span>
+                                <ul class="dropdown-menu dropdown-messages">
+                                    <li>
+                                        <a href="#">
+                                            <div>
+                                                <strong>Assignment 4: Romeo and Juliet</strong>
+                                                <span class="pull-right text-muted">
+                                            <em>3 hours ago</em>
+                                        </span>
+                                            </div>
+                                            <div>New Assignment released. Create new soliloq ...</div>
+                                        </a>
+                            </li>
+                            <li class="divider"></li>
+                            <li>
+                                <a href="#">
+                                    <div>
+                                        <strong>Peer Feedback (Assignment 3)</strong>
+                                        <span class="pull-right text-muted">
+                                            <em>Yesterday</em>
+                                        </span>
+                                    </div>
+                                    <div>Peer Feedback (Assignment 3) is now available.</div>
+                                </a>
+                            </li>
+                            <li class="divider"></li>
+                            <li>
+                                <a href="#">
+                                    <div>
+                                        <strong>New Feedback on Assignment 2</strong>
+                                        <span class="pull-right text-muted">
+                                            <em>2 days ago</em>
+                                        </span>
+                                    </div>
+                                    <div>Sarah and 2 others placed feedback on your ...</div>
+                                </a>
+                            </li>
+                            <li class="divider"></li>
+                            <li>
+                                <a class="text-center" href="#">
+                                    <strong>See All Notifications</strong>
+                                    <i class="fa fa-angle-right"></i>
+                                </a>
+                            </li>
+                        </ul>
+                        <!-- /.dropdown-messages -->
+                        </li>
+                        <!-- Setting dropdown -->
+                        <li id="navRight" class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                                    <span class="glyphicon glyphicon-cog"></span>
+                                    <span class="caret"></span>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">Account</a></li>
+                        <li><a href="#">Email</a></li>
+                        <li><a href="#">Notifications</a></li>
+                        </ul>
+                        </li>
+                        <!-- Label for Hello, Bob -->
+                        <li><a>
+                            <span class="glyphicon glyphicon-user" aria-hidden="true"></span> Hello, Bob</a></li>
+                        <!-- End label. End navbar -->
+                        </ul>
+                    </div>
+                    <!--/.nav-collapse -->
+                </div>
+                <!--/.container-fluid -->
+            </nav>
+        </div>
+        <!-- Main component -->
+        <div class="container-fluid">
+            <div id="main_body" class="body-content">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div id="feedback_body" class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h4><span class="glyphicon glyphicon-book"></span><strong> Feedback: Assignment 4: Romeo and Juliet</strong></h4>
+                                </div>
+
+                                <div class="panel-body">
+                                    <div id="tree">
+                                        <div class="row">
+                                            <div class="col-lg-12">
+                                                <span id="prefixText">Question Text: </span>
+                                                <button id="viewTextBtn" class="btn btn-default" data-toggle="modal" data-target="#textModal" onclick="showText()">View Text</button>
+                                                <!-- Modal -->
+                                                <div class="modal fade" id="textModal" role="dialog">
+                                                    <div class="modal-dialog">
+                                                        <!-- Modal content-->
+                                                        <div class="modal-content">
+                                                            <div class="modal-header">
+                                                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                                                <h4 class="modal-title">EXTRACT: Act 3, Scene 2</h4>
+                                                            </div>
+                                                            <div class="modal-body">
+                                                                <p>
+                                                                    [Begin, Juliet] <br>JULIET Gallop apace, you fiery-footed
+                                                                    steeds, Toward Phoebus' lodging.
+                                                                    <br>Such a wagoner As Phaeton would whip you to the west
+                                                                    And bring in cloudy night immediately.
+                                                                    <br>Spread thy close curtain, love-performing night,
+                                                                    That runaways' eyes may wink, and Romeo Leap to these
+                                                                    arms, untalked of and unseen.
+                                                                    <br>Lovers can see to do their amorous rites By their
+                                                                    own beauties, or, if love be blind, It best agrees with
+                                                                    night.
+                                                                    <br>Come, civil night, Thou sober-suited matron, all
+                                                                    in black, And learn me how to lose a winning match Played
+                                                                    for a pair of stainless maidenhoods.
+                                                                    <br>Hood my unmanned blood bating in my cheeks, With
+                                                                    thy black mantle, till strange love, grow bold, Think
+                                                                    true love acted simple modesty.
+                                                                    <br>Come, thou day in night, For thou wilt lie upon the
+                                                                    wings of night Whiter than new snow upon a raven’s back.
+                                                                    <br>Come, gentle night, come, loving, black-browed night,
+                                                                    Give me my Romeo.
+                                                                    <br>And when I shall die, Take him and cut him out in
+                                                                    little stars, And he will make the face of heaven so
+                                                                    fine That all the world will be in love with night And
+                                                                    pay no worship to the garish sun.
+                                                                    <br>Oh, I have bought the mansion of a love, But not
+                                                                    possessed it, and though I am sold, Not yet enjoyed.
+                                                                    <br>So tedious is this day As is the night before some
+                                                                    festival To an impatient child that hath new robes And
+                                                                    may not wear them.
+                                                                    <br>[Exeunt]
+                                                                </p>
+                                                            </div>
+                                                            <div class="modal-footer">
+                                                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+
+                                                <br><br>
+                                                <p id="questionF"> QUESTION: Read the extract carefully and answer the questions that follow.</p>
+                                            </div>
+                                            <div class="col-lg-2">
+                                                <div class="panel-group" id="accordion">
+                                                    <div class="panel panel-default">
+                                                        <div id="q_heading" class="panel-heading">
+                                                            <h4 class="panel-title">
+                                                                <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">Question 1</a>
+                                                            </h4>
+                                                        </div>
+                                                        <div id="collapse1" class="panel-collapse collapse">
+                                                            <div class="panel-body">
+                                                                <ul>
+                                                                    <li><a href="javascript:;" onclick="dispSarahQ1('Question 1: Comment on the tone enforced by Shakespeare to create an effect of melancholy.')"> Sarah</a></li>
+                                                                    <li><a href="javascript:;" onclick="dispJimQ1('Question 1: Comment on the tone enforced by Shakespeare to create an effect of melancholy.')">Jim</a></li>
+                                                                    <li><a href="javascript:;" onclick="dispJennyQ1('Question 1: Comment on the tone enforced by Shakespeare to create an effect of melancholy.')">Jenny</a></li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="panel panel-default">
+                                                        <div id="q_heading" class="panel-heading">
+                                                            <h4 class="panel-title">
+                                                                <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">Question 2</a>
+                                                            </h4>
+                                                        </div>
+                                                        <div id="collapse2" class="panel-collapse collapse">
+                                                            <div class="panel-body">
+                                                                <ul>
+                                                                    <li><a href="javascript:;" onclick="dispSarahQ1('Question 2: Name the charaterts towards which Juliet is expressing her dissapointment.')">Sarah</a></li>
+                                                                    <li><a href="javascript:;" onclick="dispJimQ1('Question 2: Name the charaterts towards which Juliet is expressing her dissapointment.')">Jim</a></li>
+                                                                    <li><a href="javascript:;" onclick="dispJennyQ1('Question 2: Name the charaterts towards which Juliet is expressing her dissapointment.')">Jenny</a></li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="panel panel-default">
+                                                        <div id="q_heading" class="panel-heading">
+                                                            <h4 class="panel-title">
+                                                                <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">Question 3</a>
+                                                            </h4>
+                                                        </div>
+                                                        <div id="collapse3" class="panel-collapse collapse">
+                                                            <div class="panel-body">
+                                                                <ul>
+                                                                    <li><a href="javascript:;" onclick="dispSarahQ1('Question 3: Discuss the dramatic techniques used by Shakespeare to create dramatic tension in this scene.')">Sarah</a></li>
+                                                                    <li><a href="javascript:;" onclick="dispJimQ1('Question 3: Discuss the dramatic techniques used by Shakespeare to create dramatic tension in this scene.')">Jim</a></li>
+                                                                    <li><a href="javascript:;" onclick="dispJennyQ1('Question 3: Discuss the dramatic techniques used by Shakespeare to create dramatic tension in this scene.')">Jenny</a></li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-10">
+                                                <div id="feedackView" class="container-fluid">
+                                                    <span class="selectQuestion">Please select a Question and one of the answers on the left to begin.</span>
+                                                    <div id="responseSelected"></div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-10 col-lg-offset-2">
+                                                <div id="feedackTabs" class="container-fluid">
+                                                    <ul class="nav nav-tabs">
+                                                        <li class="active"><a data-toggle="tab" href="#home-myf">My Feedback</a></li>
+                                                        <li><a data-toggle="tab" href="#menu1">Jim</a></li>
+                                                        <li><a data-toggle="tab" href="#menu2">Jenny</a></li>
+                                                        <li><a data-toggle="tab" href="#menu3">Sarah</a></li>
+                                                    </ul>
+                                                    <div class="tab-content">
+                                                        <div id="home-myf" class="tab-pane fade in active">
+                                                            <p class="default-text">Please select a Question and one of the answers on the left to
+                                                                begin giving feedbacks.</p>
+                                                        </div>
+                                                        <div id="menu1" class="tab-pane fade">
+                                                            <p class="default-text">Please select a Question and one of the answers on the left to
+                                                                see feedback.</p>
+                                                        </div>
+                                                        <div id="menu2" class="tab-pane fade">
+                                                            <p class="default-text">Please select a Question and one of the answers on the left to
+                                                                see feedback.</p>
+                                                        </div>
+                                                        <div id="menu3" class="tab-pane fade">
+                                                            <p class="default-text">Please select a Question and one of the answers on the left to
+                                                                see feedback.</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <br>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /container -->
+</body>
+
+</html>

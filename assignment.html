@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>EngLit</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--JavaScript-->
+    <script src="js/site.js"></script>
+    <!-- JQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Bootstrap v3.3.7 -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+    <script src="js/bootstrap.js"></script>
+    <!-- Custom styles sheet -->
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="css/chat.css" />
+    <!--Google fonts-->
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Muli">
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="favicon/favicon.ico" />
+</head>
+
+<body>
+    <div class="row">
+        <div class="container-fluid">
+            <!-- Static navbar -->
+            <nav class="navbar navbar-default">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false"
+                            aria-controls="navbar">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="index.html" id="brandID"> <img alt="Brand" src="images/NewLogo_resized.jpg"></a>
+                    </div>
+                    <div id="navbar" class="navbar-collapse collapse">
+                        <ul class="nav navbar-nav">
+                            <li><a href="index.html">Dashboard</a></li>
+                            <li class="active"><a href="assignment.html">Assignments</a></li>
+                            <li><a href="feedback.html">Review</a></li>
+
+                        </ul>
+                        <ul class="nav navbar-nav navbar-right">
+                            <!-- dropdown-notifications box -->
+                            <li id="navRight" class="dropdown">
+                                <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                                <span class="glyphicon glyphicon-bell"></span>
+                                <span class="caret"></span>
+                                <ul class="dropdown-menu dropdown-messages">
+                                    <li>
+                                        <a href="#">
+                                            <div>
+                                                <strong>Assignment 4: Romeo and Juliet</strong>
+                                                <span class="pull-right text-muted">
+                                            <em>3 hours ago</em>
+                                        </span>
+                                            </div>
+                                            <div>New Assignment released. Create new soliloq ...</div>
+                                        </a>
+                            </li>
+                            <li class="divider"></li>
+                            <li>
+                                <a href="#">
+                                    <div>
+                                        <strong>Peer Feedback (Assignment 3)</strong>
+                                        <span class="pull-right text-muted">
+                                            <em>Yesterday</em>
+                                        </span>
+                                    </div>
+                                    <div>Peer Feedback (Assignment 3) is now available.</div>
+                                </a>
+                            </li>
+                            <li class="divider"></li>
+                            <li>
+                                <a href="#">
+                                    <div>
+                                        <strong>New Feedback on Assignment 2</strong>
+                                        <span class="pull-right text-muted">
+                                            <em>2 days ago</em>
+                                        </span>
+                                    </div>
+                                    <div>Sarah and 2 others placed feedback on your ...</div>
+                                </a>
+                            </li>
+                            <li class="divider"></li>
+                            <li>
+                                <a class="text-center" href="#">
+                                    <strong>See All Notifications</strong>
+                                    <i class="fa fa-angle-right"></i>
+                                </a>
+                            </li>
+                        </ul>
+                        <!-- /.dropdown-messages -->
+                        </li>
+                        <!-- Setting dropdown -->
+                        <li id="navRight" class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                                    <span class="glyphicon glyphicon-cog"></span>
+                                    <span class="caret"></span>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">Account</a></li>
+                        <li><a href="#">Email</a></li>
+                        <li><a href="#">Notifications</a></li>
+                        </ul>
+                        </li>
+                        <!-- End setting dropdown -->
+
+                        <!-- Label for Hello, Bob -->
+                        <li><a>
+                            <span class="glyphicon glyphicon-user" aria-hidden="true"></span> Hello, Bob</a></li>
+                        <!-- End label. End navbar -->
+
+                        </ul>
+                    </div>
+                    <!--/.nav-collapse -->
+                </div>
+                <!--/.container-fluid -->
+            </nav>
+        </div>
+        <!-- Main component for a primary marketing message or call to action -->
+        <div class="container-fluid">
+            <div id="main_body" class="body-content">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div id="as_body" class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h4><span class="glyphicon glyphicon-book"></span><strong> Assignment 4: Romeo and Juliet</strong></h4>
+
+                                </div>
+                                <div class="panel-body">
+                                    <p id="question"> Read the extract below carefully and answer the questions that follow.</p>
+                                    <div class="form-group">
+                                        <div class="panel-group">
+                                            <div id="textPanel" class="panel panel-default">
+                                                <a data-toggle="collapse" href="#collapse1" onclick="changeIcon()">
+                                                    <div id="extractText" class="panel-heading">
+                                                        <span class="pull-right text-muted">
+                                                        <span id="chevChange" class="glyphicon glyphicon-chevron-down" style="color:orange"></span>
+                                                        </span>
+                                                        <h4 class="panel-title">
+                                                            Act 3 Scene 2
+                                                        </h4>
+                                                    </div>
+                                                </a>
+                                                <div id="collapse1" class="panel-collapse collapse">
+                                                    <div class="panel-body">
+                                                        [Begin, Juliet] <br>JULIET Gallop apace, you fiery-footed steeds,
+                                                        Toward Phoebus' lodging.
+                                                        <br>Such a wagoner As Phaeton would whip you to the west And bring
+                                                        in cloudy night immediately.
+                                                        <br>Spread thy close curtain, love-performing night, That runaways'
+                                                        eyes may wink, and Romeo Leap to these arms, untalked of and unseen.
+                                                        <br>Lovers can see to do their amorous rites By their own beauties,
+                                                        or, if love be blind, It best agrees with night.
+                                                        <br>Come, civil night, Thou sober-suited matron, all in black, And
+                                                        learn me how to lose a winning match Played for a pair of stainless
+                                                        maidenhoods.
+                                                        <br>Hood my unmanned blood bating in my cheeks, With thy black mantle,
+                                                        till strange love, grow bold, Think true love acted simple modesty.
+                                                        <br>Come, night.
+                                                        <br>Come, Romeo.
+                                                        <br>Come, thou day in night, For thou wilt lie upon the wings of
+                                                        night Whiter than new snow upon a raven’s back.
+                                                        <br>Come, gentle night, come, loving, black-browed night, Give me
+                                                        my Romeo.
+                                                        <br>And when I shall die, Take him and cut him out in little stars,
+                                                        And he will make the face of heaven so fine That all the world will
+                                                        be in love with night And pay no worship to the garish sun.
+                                                        <br>Oh, I have bought the mansion of a love, But not possessed it,
+                                                        and though I am sold, Not yet enjoyed.
+                                                        <br>So tedious is this day As is the night before some festival To
+                                                        an impatient child that hath new robes And may not wear them.
+                                                        <br>[Exeunt]
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                            <br>
+                                            <label id="caseQuestion" for="comment">1. Comment on the tone enforced by Shakespeare to create an effect of melancholy.</label>
+                                            <textarea class="form-control" rows="8" id="comment">I think Shakespeare successfully establishes the melancholic tone through Juliet's monologue. The tone is good for this scenario.</textarea>
+                                            <br>
+                                            <label id="caseQuestion" for="comment">2. Name the charaterts towards which Juliet is expressing her dissapointment.</label>
+                                            <textarea class="form-control" rows="6" id="comment"></textarea>
+                                            <br>
+                                            <label id="caseQuestion" for="comment">3. Discuss the dramatic techniques used by Shakespeare to create dramatic tension in this scene.</label>
+                                            <textarea class="form-control" rows="10" id="comment"></textarea>
+                                            <br>
+                                        </div>
+                                    </div>
+                                    <button id="submitBtn" type="button" class="btn btn-success btn-lg pull-right" data-toggle="modal" data-target="#confirm-submit">
+                                        <span class="glyphicon glyphicon-ok-sign"></span>  Submit
+                                    </button>
+                                    <button id="saveBtn" type="button" class="btn btn-info btn-lg pull-right" data-toggle="modal" data-target="#confirm-save">
+                                        <span class="glyphicon glyphicon-floppy-disk"></span>  Save and Exit
+                                    </button>
+
+                                    <div class="modal fade" id="confirm-save" tabindex="-1" role="dialog" aria-labelledby="saveModel" aria-hidden="true">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h3>Assignment Saved!</h3>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <h4>Your Progress has been saved</h4>
+                                                    <p>You can return to the Dashboard or press 'Cancel' to continue working.</p>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-ok" data-dismiss="modal">Cancel</button>
+                                                    <button type="button" class="btn btn-success" data-dismiss="modal" data-toggle="modal" onclick="location.href = 'index.html';">Return to Dashboard</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="modal fade" id="confirm-submit" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h3>Confirm Submit?</h3>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <h4>Are you sure you want to Submit the assignment?</h4>
+                                                    <p><span style="color:red; font-weight:bold;">Warning</span>: You will not be able to edit the assignment once you have submitted it.</p>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-ok" data-dismiss="modal">Cancel</button>
+                                                    <button type="button" class="btn btn-success" data-dismiss="modal" data-toggle="modal" data-target="#submitted">Submit</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="modal fade" id="submitted" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h3>Assignment Submitted!</h3>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <h4>Your response was successfully sumbitted.</h4>
+                                                    <h5>Please proceed to completing the Assignment Feedback.
+                                                        <h5>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-info" onclick="location.href = 'feedback.html';" style="font-weight: bold;">
+                                                        Continue to Feedback <span class="glyphicon glyphicon-chevron-right"></span>
+                                                        </button>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id = "navID" class="navbar-fixed-bottom">
+        <!--Adding popup chat window. -->
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-3 pull-right">
+                    <div id="chatPanel" class="panel panel-default">
+                        <div class="panel-heading" id="accordion">
+                            <span class="glyphicon glyphicon-comment"></span>  Chat <span id="messageBadge" class="badge" style="color:white; background-color: orange; margin-left: 10px;">1</span>
+                            <div class="btn-group pull-right">
+                                <a class="btn btn-default btn-xs" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" onclick="changeCollapse()">
+                                    <span id="glyphChat" class="glyphicon glyphicon-plus" style="color: #0077e0" ></span>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="panel-collapse collapse" id="collapseOne">
+                            <div class="panel-body">
+                                <ul class="chat">
+                                    <li class="left clearfix"><span class="chat-img pull-left glyphicon glyphicon glyphicon-user"></span>
+                                        <div class="chat-body clearfix">
+                                            <div class="header">
+                                                <strong class="primary-font"> Sarah</strong> <small class="pull-right text-muted">
+                                        <span class="glyphicon glyphicon-time"></span>3 mins ago</small>
+                                            </div>
+                                            <p>
+                                                No worries Bobby, what are you doing tonight?
+                                            </p>
+                                        </div>
+                                    </li>
+                                    <li id="mymsg" class="left clearfix">
+                                        <div class="chat-body clearfix">
+                                            <div class="header">
+                                                <small class=" text-muted"><span class="glyphicon glyphicon-time"></span>4 mins ago</small>
+                                                <strong class="pull-right primary-font"> Me  </strong>
+                                                <span class="pull-right glyphicon glyphicon glyphicon-user"></span>
+                                            </div>
+                                            <p>
+                                                Howday Sarah, I think you're right. Thanks for sharing your insight with us peasants. You're the best
+                                                <3 </p>
+                                        </div>
+                                    </li>
+                                    <li class="left clearfix"><span class="chat-img pull-left glyphicon glyphicon glyphicon-user"></span>
+                                        <div class="chat-body clearfix">
+                                            <div class="header">
+                                                <strong class="primary-font"> Sarah</strong> <small class="pull-right text-muted">
+                                        <span class="glyphicon glyphicon-time"></span>8 mins ago</small>
+                                            </div>
+                                            <p>
+                                                Hey guys, have you read through the extract yet? <br> I think that Juliet
+                                                is reflecting on her father reacted in the earlier scene. Thoughts?
+                                            </p>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="panel-footer">
+                                <div class="input-group">
+                                    <input id="message" type="text" class="form-control input-sm" placeholder="Type your message here..." />
+                                    <span class="input-group-btn">
+                                        <input type="button" value="Send" class="btn btn-info btn-sm" />
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- /container -->
+</body>
+
+</html>
