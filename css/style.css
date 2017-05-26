@@ -84,7 +84,7 @@ body {
 }
 
 /*Feedback page custom css*/
-#tree{
+#tree{ /*Tree for questions */
      font-family: "Muli", Tahoma, sans-serif;
 }
 
@@ -175,19 +175,11 @@ body {
     background-image:none !important;
     background-color: #0077e0;
     color: white;
-    /*background-image: none;
-    background-color: #0077e0;
-    color: white;*/
 }
 
 .tab-pane fade in active {
     border-top: 3px solid orange;
 }
-
-/*#navRight > a:focus, #navRight > a:focus {
-    background-color: #0077e0;
-    color: white;
-}*/
 
 .list-group-item-heading{
     font-weight: bold;
