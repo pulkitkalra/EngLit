@@ -1,5 +1,5 @@
 body {
-  font-family: "Muli", Verdana, Tahoma, sans-serif;
+  font-family: "Muli", sans-serif;
   padding: 10px;
   padding-top: 20px;
 }
@@ -61,12 +61,12 @@ body {
 }
 
 #as_body, #feedback_body{
-    font-family: "Muli", Verdana, sans-serif;
+    font-family: "Muli", sans-serif;
     box-shadow: 3px 3px 5px #888888;
 }
 
 #as_body >.panel-heading {
-    font-family: "Muli", Tahoma, sans-serif;
+    font-family: "Muli", sans-serif;
     text-align: center;
     background-image: none;
     background-color: #0077e0;
@@ -75,7 +75,7 @@ body {
 }
 
 #feedback_body >.panel-heading {
-    font-family: "Muli", Tahoma, sans-serif;
+    font-family: "Muli", sans-serif;
     text-align: center;
     background-image: none;
     background-color: #0077e0;
@@ -85,7 +85,7 @@ body {
 
 /*Feedback page custom css*/
 #tree{ /*Tree for questions */
-     font-family: "Muli", Tahoma, sans-serif;
+     font-family: "Muli",  sans-serif;
 }
 
 #feedackView{
@@ -206,12 +206,6 @@ text-align:center;
     border-radius: 10px;
 }
 
-#as_heading{
-    background-color: white; 
-    border: 2px solid #73AD21; 
-    border-radius: 10px;
-}
-
 #question, #questionF {
     border-left: 10px solid #80aefc;
     background-color: #dbfff9;
@@ -219,14 +213,6 @@ text-align:center;
     padding: 10px;
     font-weight: bold;
 }
-
-/*#questionF{
-    border-left: 10px solid #80aefc;
-    background-color: #dbfff9;
-    font-size: 20px;
-    padding: 10px;
-    font-weight: bold;
-}*/
 
 #extractText{
     background-color: white;
@@ -237,17 +223,18 @@ text-align:center;
     border: 3px solid #5c626d;
 
 }
+
 #caseQuestion{
     font-size: 19px;
 }
 
 #submitBtn{
-    font-family: "Muli", Tahoma, sans-serif;
+    font-family: "Muli", sans-serif;
     font-weight: bold;
 }
 
 #saveBtn{
-    font-family: "Muli", Tahoma, sans-serif;
+    font-family: "Muli", sans-serif;
     font-weight: bold;
     margin-right: 15px;
 }
